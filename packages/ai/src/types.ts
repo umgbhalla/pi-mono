@@ -170,6 +170,8 @@ export interface Usage {
 	cacheRead: number;
 	cacheWrite: number;
 	totalTokens: number;
+	/** Optional reasoning token subset of output tokens (provider-reported when available). */
+	reasoningTokens?: number;
 	cost: {
 		input: number;
 		output: number;
